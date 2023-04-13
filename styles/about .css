@@ -1,0 +1,11 @@
+.kurejai{
+    display: grid;
+    grid-template: 2fr 1fr 2fr/2fr 1fr 2fr;
+
+}
+.kurejai>img{
+    width:100%;
+}
+.kurejai:nth-child(2){
+    grid-row: 1 / 3;
+}
