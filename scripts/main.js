@@ -11,11 +11,19 @@ const cardRender = () => {
     img.setAttribute('src', element.image_src)
 
     const title = document.createElement('p')
-    // const titleText = document.createTextNode(element.title)
-    title.innerHTML = element.title
-    // title.appendChild(titleText)
+    const titleText = element.title
+    // if(titleText.length)
 
-    card.append(img, title)
+    console.log(titleText.length)
+    title.innerHTML = titleText
+
+    const dateContainer = document.createElement('div')
+    dateContainer.classList.add('date')
+    const date = document.createElement('span')
+    date.innerHTML = element.date
+    dateContainer.appendChild(date)
+
+    card.append(img, title, dateContainer)
     eventCardsDiv.append(card)
   }
 
