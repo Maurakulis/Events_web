@@ -31,6 +31,9 @@
 .menu > input:last-child:hover{
   background-color: black;
 }
-#navBar > img{
+.menu > a:hover{
+  color: red;
+}
+#navBar > a > img{
   width: 3rem;
 }
