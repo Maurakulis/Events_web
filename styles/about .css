@@ -1,11 +1,30 @@
 .kurejai{
+    height: 300px;
     display: grid;
-    grid-template: 2fr 1fr 2fr/2fr 1fr 2fr;
-
+    grid-template: 0.5fr 1fr 0.5fr 1fr 0.5fr/0.5fr 1fr 0.5fr 1fr 0.5fr 1fr;
+    object-fit: fill;
 }
 .kurejai>img{
-    width:100%;
+    width: 70%;
 }
-.kurejai:nth-child(2){
-    grid-row: 1 / 3;
+.kurejai>img:nth-child(1){
+    border: 2px solid red;
+    grid-row: 1 / 4;
+    grid-column: 1/4;
+    z-index: 1;
+}
+.kurejai>img:nth-child(2){
+    border: 2px solid blue;
+    grid-row: 2 / 5;
+    grid-column: 3/7;;
+}
+.kurejai>img:nth-child(3){
+    border: 2px solid green;
+    grid-row: 3/ 6;
+    grid-column: 2/5;;
+}
+.kurejai>img:nth-child(4){
+    border: 2px solid yellow;
+    grid-row: 4/ 7;
+    grid-column: 4/7;;
 }
