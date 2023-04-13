@@ -6,7 +6,7 @@ let fAnonsai=()=>{
             //
             qAnonsas.style.backgroundImage = `url(${e.image_src})`;
         },i*2000);
-        qAnonsas.addEventListener('mouseover',()=>clearTimeout(timeOut));
+        qAnonsas.addEventListener('click',()=>clearTimeout(timeOut));
 })};    
 
 fAnonsai();
