@@ -1,0 +1,21 @@
+#menu{
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: lightgrey;
+  
+  
+}
+#menu > img {
+ height: 2rem;
+}
+#menu > a {
+  text-decoration: none;
+ 
+}
+#menu > input:first-child{
+  text-decoration: none;
+  background-color: black;
+  color: gold;
+}
