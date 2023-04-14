@@ -1,0 +1,58 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+@keyframes slidein {
+  from {
+    margin-left: 40%;
+  
+  }
+
+  to {
+    margin-right: 0%;
+  
+  }
+}
+#navBar{
+  padding: 5px;
+  background-color:transparent;
+  color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+.menu{
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu > a{
+  padding: 2px;  
+  text-decoration: none;
+  color: blanchedalmond;
+}
+.menu > input:last-child{
+  background-color: red;
+  color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  border: none;
+}
+.menu > input:last-child:hover{
+  background-color: black;
+}
+.menu > a:hover{
+  color: red;
+}
+#navBar > a > img{
+  width: 5rem;
+}
+.logo{
+  display: flex;
+}
+#navBar .logo > img{
+  height: 4rem;
+  animation: 3s infinite alternate slidein;
+}
