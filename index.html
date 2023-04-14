@@ -1,43 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./scripts/menu.js" defer></script>
+    <link rel="stylesheet" href="./styles/menu.css" />
+    <title>Events</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="./scripts/menu.js" defer></script>
-  <link rel="stylesheet" href="./styles/menu.css">
-  <title>Events</title>
-
-</head>
-
-
-<body>
-  <header>
-    <div id="navBar">
-      <a href="#eventCards"><img src="https://www.vilnius-events.lt/wp-content/themes/vilniusevents/assets/images/logo.png" alt="Vilniaus logo"></a>
-      <div class="logo">
-        <img src="https://www.vilnius-events.lt/wp-content/uploads/2023/03/322555793_1230079434526401_3097391571995739645_n.jpg" alt="">
-        <img src="https://www.vilnius-events.lt/wp-content/uploads/2023/04/20221018_165937-scaled-1.jpg" alt="">
+  <body>
+    <header>
+      <div id="navBar">
+        <a href="#eventCards"
+          ><img
+            src="https://www.vilnius-events.lt/wp-content/themes/vilniusevents/assets/images/logo.png"
+            alt="Vilniaus logo"
+        /></a>
+        <div class="menu">
+          <a href="#">APIE</a>
+          <a href="#">RENGINIAI</a>
+          <input type="submit" value="SUBSCRIBE" />
+        </div>
       </div>
-      <div class="menu">
-        <a href="#">APIE</a>
-      <a href="#">RENGINIAI</a>
-      <input type="submit" value="SUBSCRIBE">
-      </div>
-      
-    </div>
-  </header>  
-  <main>
-    <section>
-      <h1>Vilniuje vykstantys renginiai</h1>
-      <p>Vilnius yra miestas, kuriame daugybė renginių vyksta per metus. Nuo muzikos festivalių iki sporto renginių,
-        Vilnius turi ką pasiūlyti tiek vietiniams gyventojams, tiek ir turistams. </p>
-      <div id="filter"></div>
-      <div id="eventCards"></div>
-    </section>
-  </main>
-
-</body>
-
+    </header>
+    <main>
+      <section>
+        <h1>Vilniuje vykstantys renginiai</h1>
+        <p>
+          Vilnius yra miestas, kuriame daugybė renginių vyksta per metus. Nuo
+          muzikos festivalių iki sporto renginių, Vilnius turi ką pasiūlyti tiek
+          vietiniams gyventojams, tiek ir turistams.
+        </p>
+        <div id="filter"></div>
+        <div id="eventCards"></div>
+      </section>
+    </main>
+  </body>
 </html>

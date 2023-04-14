@@ -1,22 +1,12 @@
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
-@keyframes slidein {
-  from {
-    margin-left: 40%;
-  
-  }
 
-  to {
-    margin-right: 0%;
-  
-  }
-}
 #navBar{
   padding: 5px;
   background-color:transparent;
   color: aqua;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   font-size: 1rem;
   font-family: 'Roboto', sans-serif;
@@ -31,7 +21,7 @@
 .menu > a{
   padding: 2px;  
   text-decoration: none;
-  color: blanchedalmond;
+  color: rgb(238, 68, 68);
 }
 .menu > input:last-child{
   background-color: red;
