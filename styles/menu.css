@@ -1,58 +1,54 @@
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
-@keyframes slidein {
-  from {
-    margin-left: 40%;
-  
-  }
-
-  to {
-    margin-right: 0%;
-  
-  }
-}
 #navBar{
   padding: 5px;
-  background-color:transparent;
+  background-color:#202020;
   color: aqua;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   font-size: 1rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
-.menu{
-  display: flex;
-  gap: 10px;
-  justify-content: space-between;
-  align-items: center;
-}
-.menu > a{
+
+#navBar > a {
   padding: 2px;  
   text-decoration: none;
-  color: blanchedalmond;
+  background-color: rgb(123, 122, 122);
+  color: whitesmoke;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow:1px 1px 1px 1px #6c5f5f;
 }
-.menu > input:last-child{
-  background-color: red;
+#navBar > input:last-child{
+  background-color: grey;
   color: whitesmoke;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
-  border: none;
+  border-radius: 20px;
+  padding: 10px;
 }
-.menu > input:last-child:hover{
-  background-color: black;
+#navBar > a:hover{
+  background-color: #202020;
+  box-sizing: content-box;
+  width: 10%;
+  border: solid #5B6DCD 10px;
+  padding: 5px;
+  transition: 0.3s;
 }
-.menu > a:hover{
-  color: red;
+#navBar > input:last-child:hover{
+  background-color: #202020;
+  box-sizing: content-box;
+  width: 15%;
+  border: solid #5B6DCD 10px;
+  padding: 5px;
+  transition: 0.3s;
 }
-#navBar > a > img{
+#navBar > img{
   width: 5rem;
-}
-.logo{
-  display: flex;
-}
-#navBar .logo > img{
-  height: 4rem;
-  animation: 3s infinite alternate slidein;
 }
