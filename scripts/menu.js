@@ -1,4 +1,4 @@
-document.querySelector('.menu>input')
+document.querySelector('')
 .addEventListener('click', e => {
 console.log(e);
 const button = document.createElement('input')
