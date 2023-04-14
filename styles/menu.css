@@ -1,8 +1,19 @@
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,200;1,400;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+@keyframes slidein {
+  from {
+    margin-left: 40%;
+  
+  }
+
+  to {
+    margin-right: 0%;
+  
+  }
+}
 #navBar{
   padding: 5px;
-  background-color: gray;
+  background-color:transparent;
   color: aqua;
   display: flex;
   justify-content: space-between;
@@ -18,6 +29,7 @@
   align-items: center;
 }
 .menu > a{
+  padding: 2px;  
   text-decoration: none;
   color: blanchedalmond;
 }
@@ -35,5 +47,12 @@
   color: red;
 }
 #navBar > a > img{
-  width: 3rem;
+  width: 5rem;
+}
+.logo{
+  display: flex;
+}
+#navBar .logo > img{
+  height: 4rem;
+  animation: 3s infinite alternate slidein;
 }
