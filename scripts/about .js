@@ -1,13 +1,12 @@
-import {data} from './data_about.js';
-let qAnonsas=document.querySelector('#anonsas');
-let fAnonsai=()=>{
+import {data} from './data.js';
+let qTrailer=document.querySelector('#trailer');
+let fTrailer=()=>{
     data.forEach((e,i)=>{
         let timeOut=setTimeout(()=>{
-            //
-            qAnonsas.style.backgroundImage = `url(${e.image_src})`;
+            qTrailer.style.backgroundImage = `url(${e.image_src})`;
         },i*2000);
-        qAnonsas.addEventListener('click',()=>clearTimeout(timeOut));
+        qTrailer.addEventListener('click',()=>clearTimeout(timeOut));
 })};    
 
-fAnonsai();
-qAnonsas.addEventListener('click',fAnonsai);
+fTrailer();
+qTrailer.addEventListener('click',fTrailer);
