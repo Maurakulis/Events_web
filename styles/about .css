@@ -97,11 +97,10 @@ main{
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   background-color: #202020;
-
-
+  margin: 0;
 }
 
-.socialMedia {
+.socialMedia{
   grid-column: 1;
   grid-row: 1;
   display: flex;
@@ -110,32 +109,29 @@ main{
   display: flex;
   justify-content: space-around;
   align-items: center;
-
 }
 
-
-.links {
+.links{
   grid-column: 2;
   grid-row: 1;
   display: flex;
   align-items: center;
-
+  justify-content: center;
 }
 
-.links ul {
-  list-style: none;
-  margin: 0;
-}
-
-.links a {
+.links a{
   text-decoration: none;
   color: rgb(255, 255, 255);
-  font-size: 15px;
+  font-size: 12px;
   font-family: 'Golos Text', sans-serif;
-
 }
 
-.logoAndName {
+.links li{
+  display: inline-flex;
+  margin-right: 15px;
+}
+
+.logoAndName{
   grid-column: 1/3;
   grid-row: 2;
   display: flex;
@@ -148,28 +144,24 @@ main{
   gap: 1rem;
 }
 
-#logo {
+#logo{
   width: 40px;
 }
 
-.icons a li i {
+.icons a li i{
 
   color: rgb(255, 255, 255);
-
-
 }
 
-.icons a {
+.icons a{
   text-decoration: none;
 }
 
-.icons a li {
+.icons a li{
   display: inline;
-
   margin-right: 20px;
 }
 
-ul {
+ul{
   list-style: none;
-  margin: 0;
 }
