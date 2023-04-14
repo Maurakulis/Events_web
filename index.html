@@ -5,15 +5,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Events</title>
-  <link rel="icon" href="img/Logo_of_Vilnius.svg.png">
-  <link rel="stylesheet" href="styles/main.css">
+  <script src="./scripts/menu.js" defer></script>
   <link rel="stylesheet" href="./styles/menu.css">
-  <script src="scripts/main.js" type="module"></script>
-  <script src="scripts/filter.js" type="module"></script>
+  <title>Events</title>
+
 </head>
 
+
 <body>
+  <header>
+    <div id="navBar">
+      <a href="#eventCards"><img src="https://www.vilnius-events.lt/wp-content/themes/vilniusevents/assets/images/logo.png" alt="Vilniaus logo"></a>
+      <div class="logo">
+        <img src="https://www.vilnius-events.lt/wp-content/uploads/2023/03/322555793_1230079434526401_3097391571995739645_n.jpg" alt="">
+        <img src="https://www.vilnius-events.lt/wp-content/uploads/2023/04/20221018_165937-scaled-1.jpg" alt="">
+      </div>
+      <div class="menu">
+        <a href="#">APIE</a>
+      <a href="#">RENGINIAI</a>
+      <input type="submit" value="SUBSCRIBE">
+      </div>
+      
+    </div>
+  </header>  
   <main>
     <section>
       <h1>Vilniuje vykstantys renginiai</h1>
@@ -23,16 +37,6 @@
       <div id="eventCards"></div>
     </section>
   </main>
-  <footer>
-    <div id="menu">
-      <img src="https://www.vilnius-events.lt/wp-content/themes/vilniusevents/assets/images/logo.png"
-        alt="Vilniaus logo">
-      <a href="#">APIE</a>
-      <a href="#">RENGINIAI</a>
-      <input type="submit" value="Subscribe">
-      <input type="text" id="" name="" placeholder="Your email...">
-    </div>
-  </footer>
 
 </body>
 
