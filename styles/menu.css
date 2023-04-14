@@ -1,58 +1,42 @@
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
-@keyframes slidein {
-  from {
-    margin-left: 40%;
-  
-  }
-
-  to {
-    margin-right: 0%;
-  
-  }
-}
 #navBar{
   padding: 5px;
-  background-color:transparent;
+  background-color:#202020;
   color: aqua;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   font-size: 1rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
-.menu{
-  display: flex;
-  gap: 10px;
-  justify-content: space-between;
-  align-items: center;
-}
-.menu > a{
+
+#navBar > a {
   padding: 2px;  
   text-decoration: none;
-  color: blanchedalmond;
-}
-.menu > input:last-child{
-  background-color: red;
   color: whitesmoke;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;
-  border: none;
+  position: relative;
+  border-radius: 15px;
+  padding: 10px;
 }
-.menu > input:last-child:hover{
-  background-color: black;
+#navBar > a:after{
+  content: "";
+  position: absolute;
+  background-color: rgb(223, 5, 56);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
 }
-.menu > a:hover{
-  color: red;
+#navBar > a:hover:after{
+  width: 100%;
 }
-#navBar > a > img{
+#navBar > img{
   width: 5rem;
-}
-.logo{
-  display: flex;
-}
-#navBar .logo > img{
-  height: 4rem;
-  animation: 3s infinite alternate slidein;
 }
