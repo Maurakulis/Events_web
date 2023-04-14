@@ -12,7 +12,6 @@ const cardRender = () => {
 
     const title = document.createElement('p')
     const titleText = element.title
-    // if(titleText.length)
 
     console.log(titleText.length)
     title.innerHTML = titleText
