@@ -34,7 +34,9 @@
     font-size: 12px;
     font-family: 'Golos Text', sans-serif;
 }
-
+.links a:hover{
+    color: #E62428;
+}
 .links li{
     display: inline-flex;
     margin-right: 15px;
@@ -65,7 +67,9 @@
 .icons a{
     text-decoration: none;
 }
-
+.icons a :hover{
+    color: #E62428;
+}
 .icons a li{
     display: inline;
     margin-right: 20px;
