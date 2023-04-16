@@ -34,7 +34,9 @@
     font-size: 12px;
     font-family: 'Golos Text', sans-serif;
 }
-
+.links a:hover{
+    color: #E62428;
+}
 .links li{
     display: inline-flex;
     margin-right: 15px;
@@ -44,13 +46,15 @@
     grid-column: 1/3;
     grid-row: 2;
     display: flex;
-    padding: 10px;
+    padding: 5px;
+    padding-top: 0;
     justify-content: center;
     color: rgb(197, 197, 197);
     font-family: 'Golos Text', sans-serif;
     font-size: 10px;
     align-items: center;
-    gap: 1rem;
+   gap: 1rem;
+    flex-direction: column;
 }
 
 #logo{
@@ -65,7 +69,9 @@
 .icons a{
     text-decoration: none;
 }
-
+.icons a :hover{
+    color: #E62428;
+}
 .icons a li{
     display: inline;
     margin-right: 20px;
@@ -73,4 +79,21 @@
 
 ul{
     list-style: none;
+}
+
+#subscr{
+    display: inline;
+}
+
+.logoPart{
+    display: flex;
+    gap: 1rem;
+}
+#emailButton:hover{
+  background-color: #E62428;
+  border: none;
+}
+#emailButton{
+    border: none;
+    height: 17px;
 }
