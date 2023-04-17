@@ -17,7 +17,7 @@ html {
 section {
   padding: 30px;
   width: 70%;
-  margin: 20px auto;
+  margin: 30px auto;
   margin-bottom: 10px;
   line-height: 30px;
 }
@@ -30,6 +30,7 @@ div[id=eventCards] {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 
 div[id=eventCards] p {
@@ -65,6 +66,9 @@ div[id=eventCards] p {
   padding: 10px 20px;
   background-color: #e62427e9;
   color: white;
+}
+.padding{
+  padding: 15px;
 }
 
 .card>p {
