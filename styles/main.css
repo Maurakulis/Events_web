@@ -66,3 +66,11 @@ div[id=eventCards] p {
   background-color: #e62427e9;
   color: white;
 }
+
+.card>p {
+  font-weight: 600;
+}
+
+.card>p:hover {
+  color: #e62427;
+}
